@@ -5,23 +5,114 @@
         <link href="light_theme.css" type="text/css" rel="stylesheet">
     </head>
     <body>
-        <h1>Инструкция пользователя</h1>
+        <h1>Инструкция администратора</h1>
         <div>
             <p>Содержание</p>
             <ol>
                 <li>
-                    Просмотр списка фильмов
+                    <a href="#div1">Вход в приложение</a>
                 </li>
                 <li>
-                    Просмотр информации о фильме
+                    <a href="#div2">Просмотр списка фильмов</a>
                 </li>
                 <li>
-                    Выбор кинотеатра и покупка мест
+                    <a href="#div3">Просмотр информации о фильме</a>
                 </li>
                 <li>
-                    Профиль пользователя
+                    <a href="#div4">Выбор кинотеатра и покупка мест</a>
+                </li>
+                <li>
+                    <a href="#div5">Профиль пользователя</a>
+                </li>
+                <li>
+                    <a href="#div6">Возможности администратора</a>
+                    <ol>
+                        <li><a href="#div6_1">Редактирование информации о фильмах</a></li>
+                        <li><a href="#div6_2">Редактирование информации о кинотеатрах</a></li>
+                        <li><a href="#div6_3">Редактирование информации о сеансах</a></li>
+                    </ol>
                 </li>
             </ol>
+        </div>
+        <div id="div1">
+            <h2>1. Вход в приложение</h2>
+            Для входа в систему вы можете выполнить одно из двух действий:<br>
+            - Зарегистрироваться в приложении, нажав на кнопку "Регистрация":<br>
+            <img style="max-height: 300px;" src="media/light/register.png"><br>
+            - Войти в аккаунт, нажав на кнопку "Вход":<br>
+            <img style="max-height: 300px;" src="media/light/signin.png"><br>
+        </div>
+        <div id="div2">
+            <h2>2. Просмотр списка фильмов</h2>
+            Просмотр списка фильмов проводится в главном меню (показано на рисунке ниже):<br>
+            <img style="max-height: 300px;" src="media/light/admin_filmlist.png"><br>
+        </div>
+        <div id="div3">
+            <h2>3. Просмотр информации о фильме</h2>
+            При нажатии на кнопку "Подробнее" будет показана информация о фильме:<br>
+            <img style="max-height: 300px;" src="media/light/filmdesc.png"><br>
+            На этом экране также может присутствовать кнопка "К описанию фильма", ведущая на внешний ресурс с описанием фильма. Пример такой кнопки и ее поведения показан ниже:<br>
+            <img style="max-height: 300px;" src="media/light/filmdescexternal.png"><br>
+            <img style="max-height: 300px;" src="media/light/filmdescexternal_afterclick.png"><br>
+        </div>
+        <div id="div4">
+            <h2>4. Выбор кинотеатра и покупка мест</h2>
+            При нажатии на кнопку "К покупке билетов" (см. пункт 3) будет показана информация о доступных сеансах в различных кинотеатрах:<br>
+            <img style="max-height: 300px;" src="media/light/cinemawithfilmlist.png"><br>
+            После выбора кинотеатра и сеанса вы перейдете в окно выбора места:<br>
+            <img style="max-height: 300px;" src="media/light/buytickets.png"><br>
+            Выберите понравившееся вам свободное место (зеленое) и купите билет, нажав на кнопку внизу:<br>
+            <img style="max-height: 300px;" src="media/light/buytickets_1.png"><br>
+            Купленный билет можно вернуть до начала сеанса, выбрав желтое место и нажав на кнопку внизу:<br>
+            <img style="max-height: 300px;" src="media/light/returnticket.png"><br>
+        </div>
+        <div id="div5">
+            <h2>5. Профиль пользователя</h2>
+            При нажатии на кнопку "Профиль" в верхней части экрана будет показана информация о вашем профиле:<br>
+            <img style="max-height: 300px;" src="media/light/profile.png"><br>
+            Какие действия можно совершить в профиле:<br>
+            - Изменить фото профиля:<br>
+            <img style="max-height: 300px;" src="media/light/changeprofilephoto.png"><br>
+            - Изменить имя и номер телефона:<br>
+            <img style="max-height: 300px;" src="media/light/changeprofiledata.png"><br>
+            - Пополнить баланс (на данный момент доступно только пополнение по промокоду):<br>
+            <img style="max-height: 300px;" src="media/light/deposit.png"><br>
+            - Просмотреть список купленных билетов с возможностью перейти к сеансу, на который вы приобрели билет(ы):<br>
+            <img style="max-height: 300px;" src="media/light/boughtticketslist.png"><br>
+        </div>
+        <div id="div6">
+            <h2>6. Возможности администратора</h2>
+            Вам, как администратору, доступны следующие возможности:<br>
+            <div id="div6_1">
+                <h3>6.1. Редактирование информации о фильмах</h3>
+                Как можно заметить из пункта 2, около каждого фильма есть значок редактирования информации. При нажатии на него будет показано следующее окно:<br>
+                <img style="max-height: 300px;" src="media/light/editfilm.png"><br>
+                Внизу есть три кнопки: "Сохранить", "Отменить" и "Удалить". При нажатии на "Удалить" будет показано диалоговое окно, защищающее от случайного нажатия:<br>
+                <img style="max-height: 300px;" src="media/light/editfilm_confirmdelete.png"><br>
+            </div>
+            <div id="div6_2">
+                <h3>6.2. Редактирование информации о кинотеатрах</h3>
+                В главном меню (пункт 2) есть кнопка карандаша в верхней части экрана. При нажатии на нее будет показано следующее окно:<br>
+                <img style="max-height: 300px;" src="media/light/editcinemas.png"><br>
+                Здесь можно редактировать информацию о самом кинотеатре (или создать запись о новом), о кинозалах в этом кинотеатре или о сеансах в этом кинотеатре.<br>
+                При попытке удаления кинотеатра или кинозала будет показано диалоговое окно, защищающее от случайного нажатия:<br>
+                <img style="max-height: 300px;" src="media/light/editcinemas_confirmdelete.png"><br>
+                <img style="max-height: 300px;" src="media/light/editcinemas_confirmdelete_showroom.png"><br>
+            </div>
+            <div id="div6_3">
+                <h3>6.3. Редактирование информации о сеансах</h3>
+                При нажатии на кнопку "К редактированию показов" будет показано следующее окно:<br>
+                <img style="max-height: 300px;" src="media/light/editshows.png"><br>
+                Здесь можно выбрать уже существующий сеанс или создать новый:<br>
+                <img style="max-height: 300px;" src="media/light/editshow.png"><br>
+                В этом окне можно:<br>
+                - выбрать место и изменить его цену, а также - аннулировать билет на это место:<br>
+                <img style="max-height: 300px;" src="media/light/editshow_seat.png"><br>
+                При попытке аннулирования билета будет показано диалоговое окно, защищающее от случайного нажатия:<br>
+                <img style="max-height: 300px;" src="media/light/editshow_annulateticket.png"><br>
+                Также можно изменить дату и время сеанса или удалить его (при попытке удаления будет выведено соответствующее диалоговое окно):<br>
+                <img style="max-height: 300px;" src="media/light/deleteshow.png"><br>
+            </div>
         </div>
     </body>
 </html>
